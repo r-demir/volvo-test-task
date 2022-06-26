@@ -15,10 +15,10 @@ import Foundation
 import ObjectMapper
 
 struct Main : Mappable {
-	var temp : Double?
-	var feels_like : Double?
-	var temp_min : Double?
-	var temp_max : Double?
+	var temp : Int?
+	var feels_like : Int?
+	var temp_min : Int?
+	var temp_max : Int?
 	var pressure : Int?
 	var humidity : Int?
 	var sea_level : Int?

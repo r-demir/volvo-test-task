@@ -6,11 +6,14 @@
 //
 
 import UIKit
-import SwiftyJSON
+import Alamofire
 
 
 class NetworkingManager: NSObject {
     static var shared = NetworkingManager()
+    static var isConnected: Bool {
+        return NetworkReachabilityManager()?.isReachable ?? false
+    }
     private var weatherService = WeatherService()
 }
 

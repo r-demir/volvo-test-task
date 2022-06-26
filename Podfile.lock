@@ -3,30 +3,30 @@ PODS:
   - AlamofireObjectMapper (5.2.1):
     - Alamofire (~> 4.7)
     - ObjectMapper (~> 3.4)
+  - ImageLoader (0.15.0)
   - ObjectMapper (3.5.3)
-  - SVProgressHUD (2.2.5)
-  - SwiftyJSON (4.2.0)
+  - SkeletonView (1.29.2)
 
 DEPENDENCIES:
   - AlamofireObjectMapper (~> 5.2)
-  - SVProgressHUD
-  - SwiftyJSON (~> 4.2.0)
+  - ImageLoader
+  - SkeletonView
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - AlamofireObjectMapper
+    - ImageLoader
     - ObjectMapper
-    - SVProgressHUD
-    - SwiftyJSON
+    - SkeletonView
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   AlamofireObjectMapper: 1989f690e982b71921b9253f53a4f33a9bc00d88
+  ImageLoader: e0635d52020d64dc7687e3a3b14dc53212ac0442
   ObjectMapper: 97111c97e054a6ee25917662106689f0b4127b37
-  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
-  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+  SkeletonView: 915a80ecc2b6421ab7ac0f0212321c0cc1406472
 
-PODFILE CHECKSUM: 4f0aeb50b75a1e88a081db18907115d621cb78bc
+PODFILE CHECKSUM: 29e01cb705a26e2ea7828746afd5c32dea01a946
 
 COCOAPODS: 1.11.3

@@ -23,6 +23,7 @@
 		8BA6647D28686B1F0024555A /* WeatherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA6647B28686B1F0024555A /* WeatherCollectionViewCell.swift */; };
 		8BA6647E28686B1F0024555A /* WeatherCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BA6647C28686B1F0024555A /* WeatherCollectionViewCell.xib */; };
 		8BA6648928687F430024555A /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA6648828687F430024555A /* City.swift */; };
+		8BA6648D2868A5E50024555A /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA6648C2868A5E50024555A /* Alert.swift */; };
 		8BC4F27B28684A97002B3236 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC4F27928684A97002B3236 /* WeatherViewController.swift */; };
 		8BC4F27C28684A97002B3236 /* WeatherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BC4F27A28684A97002B3236 /* WeatherViewController.xib */; };
 		8BC4F27E28684AA6002B3236 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC4F27D28684AA6002B3236 /* WeatherViewModel.swift */; };
@@ -49,6 +50,7 @@
 		8BA6647B28686B1F0024555A /* WeatherCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCollectionViewCell.swift; sourceTree = "<group>"; };
 		8BA6647C28686B1F0024555A /* WeatherCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherCollectionViewCell.xib; sourceTree = "<group>"; };
 		8BA6648828687F430024555A /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		8BA6648C2868A5E50024555A /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		8BC4F27928684A97002B3236 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		8BC4F27A28684A97002B3236 /* WeatherViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherViewController.xib; sourceTree = "<group>"; };
 		8BC4F27D28684AA6002B3236 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
@@ -110,7 +112,7 @@
 				8B75ED1B2868297A00167603 /* Configuration */,
 				8B75ED192868294D00167603 /* User Interface */,
 				8B75ED182868294600167603 /* Networking */,
-				8BA6647F28686E010024555A /* Extensions */,
+				8BA6647F28686E010024555A /* Helper */,
 			);
 			path = "volvo-test-task";
 			sourceTree = "<group>";
@@ -219,11 +221,12 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		8BA6647F28686E010024555A /* Extensions */ = {
+		8BA6647F28686E010024555A /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				8BA6648C2868A5E50024555A /* Alert.swift */,
 			);
-			path = Extensions;
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		8BA6648728687F260024555A /* Enum */ = {
@@ -364,6 +367,7 @@
 				8BA6648928687F430024555A /* City.swift in Sources */,
 				8B75ED07286828F700167603 /* SceneDelegate.swift in Sources */,
 				8BA3B47B28683A0100CB5DFA /* Wind.swift in Sources */,
+				8BA6648D2868A5E50024555A /* Alert.swift in Sources */,
 				8BA6647D28686B1F0024555A /* WeatherCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -513,6 +517,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "Volvo Test Task";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -545,6 +550,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "Volvo Test Task";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;

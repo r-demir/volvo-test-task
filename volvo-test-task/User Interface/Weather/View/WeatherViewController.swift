@@ -6,8 +6,6 @@
 //
 
 import UIKit
-import SwiftyJSON
-import SVProgressHUD
 
 class WeatherViewController: UIViewController {
 
@@ -22,7 +20,7 @@ class WeatherViewController: UIViewController {
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        print("WeatherViewController implementation Error")
+        print("WeatherViewController implementation error")
     }
     
     override func viewDidLoad() {
@@ -34,8 +32,6 @@ class WeatherViewController: UIViewController {
         self.navigationItem.title = "Weather"
         let nib = UINib(nibName: String(describing: WeatherCollectionViewCell.self), bundle: nil)
         self.collectionView.register(nib, forCellWithReuseIdentifier: String(describing: WeatherCollectionViewCell.self))
-        self.collectionView.delegate = viewModel
-        self.collectionView.dataSource = viewModel
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -55,19 +51,19 @@ class WeatherViewController: UIViewController {
 }
 
 private extension WeatherViewController {
+    
     func bindViewModel() {
         viewModel?.bind {[weak self] change in
             switch change {
                 case .noInternet:
-                    break
-                case .alert(title: let title, message: let message):
-                    break
-                case .loading(let isLoading):
-                    isLoading ? SVProgressHUD.show() : SVProgressHUD.dismiss()
+                    Alert.show(title: "Warning", message: "No internet connection", actionTitle: "Okay") { _ in
+                        self?.viewWillAppear(true)
+                    }
                 case .reload:
                     self?.collectionView.reloadData()
             }
         }
+        viewModel?.checkConnectivity(collectionView: self.collectionView)
     }
     
     func unbindViewModel() {

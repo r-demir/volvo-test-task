@@ -6,10 +6,10 @@ target 'volvo-test-task' do
   use_frameworks!
 
   # Pods for volvo-test-task
-  pod 'SVProgressHUD'
   pod 'AlamofireObjectMapper', '~> 5.2'
-  pod 'SwiftyJSON', '~> 4.2.0'
-
+  pod 'SkeletonView'
+  pod 'ImageLoader'
+  
 end
 
 

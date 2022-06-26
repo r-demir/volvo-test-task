@@ -18,7 +18,7 @@ class WeatherService: NSObject {
     let API_URL = "https://api.openweathermap.org/data/2.5/weather"
     
     func getWeatherInfo(city: String, callback: @escaping WeatherResponseHandler) {
-        let url = API_URL + "?q=\(city)&appid=\(API_KEY)"
+        let url = API_URL + "?q=\(city)&appid=\(API_KEY)&units=metric"
         Alamofire.request(url).responseObject { (response: DataResponse<WeatherResponse>) in
             if let error = response.error {
                 print("WeatherAPI::getWeatherInfo | \(error.localizedDescription)")

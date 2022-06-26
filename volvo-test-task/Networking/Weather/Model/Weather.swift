@@ -18,7 +18,13 @@ struct Weather : Mappable {
 	var id : Int?
 	var main : String?
 	var description : String?
-	var icon : String?
+    var icon : String?
+    var imageUrl: String? {
+        guard let icon = self.icon else {
+            return nil
+        }
+        return "http://openweathermap.org/img/wn/\(icon)@2x.png"
+    }
 
 	init?(map: Map) { }
 
