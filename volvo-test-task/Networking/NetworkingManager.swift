@@ -11,13 +11,13 @@ import SwiftyJSON
 
 class NetworkingManager: NSObject {
     static var shared = NetworkingManager()
-    private var weatherClient = WeatherAPIClient()
+    private var weatherService = WeatherService()
 }
 
 extension NetworkingManager {
     
     func getWeatherInfo(latitude: Double = 35, longitude: Double = 139, callback: @escaping WeatherResponseHandler){
-        self.weatherClient.getWeatherInfo(latitude: latitude, longitude: longitude) { response in
+        self.weatherService.getWeatherInfo(latitude: latitude, longitude: longitude) { response in
             callback(response)
         }
     }

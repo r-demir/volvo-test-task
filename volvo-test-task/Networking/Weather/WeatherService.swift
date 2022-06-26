@@ -12,7 +12,7 @@ import AlamofireObjectMapper
 
 typealias WeatherResponseHandler = (WeatherResponse?)->()
 
-class WeatherAPIClient: NSObject {
+class WeatherService: NSObject {
 
     let API_KEY = "22297b9bbc346661f9509b825863bb57"
     let API_URL = "https://api.openweathermap.org/data/2.5/weather"

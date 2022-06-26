@@ -12,7 +12,7 @@
 		8B75ED0E286828F800167603 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B75ED0D286828F800167603 /* Assets.xcassets */; };
 		8B75ED11286828F800167603 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B75ED0F286828F800167603 /* LaunchScreen.storyboard */; };
 		8BA3B4672868358500CB5DFA /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA3B4662868358500CB5DFA /* NetworkingManager.swift */; };
-		8BA3B46A286835DD00CB5DFA /* WeatherAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA3B469286835DD00CB5DFA /* WeatherAPIClient.swift */; };
+		8BA3B46A286835DD00CB5DFA /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA3B469286835DD00CB5DFA /* WeatherService.swift */; };
 		8BA3B47528683A0100CB5DFA /* Clouds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA3B46E28683A0100CB5DFA /* Clouds.swift */; };
 		8BA3B47628683A0100CB5DFA /* WeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA3B46F28683A0100CB5DFA /* WeatherResponse.swift */; };
 		8BA3B47728683A0100CB5DFA /* Sys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA3B47028683A0100CB5DFA /* Sys.swift */; };
@@ -20,6 +20,9 @@
 		8BA3B47928683A0100CB5DFA /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA3B47228683A0100CB5DFA /* Weather.swift */; };
 		8BA3B47A28683A0100CB5DFA /* Coord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA3B47328683A0100CB5DFA /* Coord.swift */; };
 		8BA3B47B28683A0100CB5DFA /* Wind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA3B47428683A0100CB5DFA /* Wind.swift */; };
+		8BC4F27B28684A97002B3236 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC4F27928684A97002B3236 /* WeatherViewController.swift */; };
+		8BC4F27C28684A97002B3236 /* WeatherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BC4F27A28684A97002B3236 /* WeatherViewController.xib */; };
+		8BC4F27E28684AA6002B3236 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC4F27D28684AA6002B3236 /* WeatherViewModel.swift */; };
 		BEEB5FD54E2009A74415638A /* Pods_volvo_test_task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 022907428F90131B450CAC73 /* Pods_volvo_test_task.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +35,7 @@
 		8B75ED10286828F800167603 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B75ED12286828F800167603 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BA3B4662868358500CB5DFA /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
-		8BA3B469286835DD00CB5DFA /* WeatherAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPIClient.swift; sourceTree = "<group>"; };
+		8BA3B469286835DD00CB5DFA /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		8BA3B46E28683A0100CB5DFA /* Clouds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clouds.swift; sourceTree = "<group>"; };
 		8BA3B46F28683A0100CB5DFA /* WeatherResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeatherResponse.swift; path = ../../../../../../../Downloads/codegen_62b802227cecf/WeatherResponse.swift; sourceTree = "<group>"; };
 		8BA3B47028683A0100CB5DFA /* Sys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sys.swift; sourceTree = "<group>"; };
@@ -40,6 +43,9 @@
 		8BA3B47228683A0100CB5DFA /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		8BA3B47328683A0100CB5DFA /* Coord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coord.swift; sourceTree = "<group>"; };
 		8BA3B47428683A0100CB5DFA /* Wind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wind.swift; sourceTree = "<group>"; };
+		8BC4F27928684A97002B3236 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		8BC4F27A28684A97002B3236 /* WeatherViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherViewController.xib; sourceTree = "<group>"; };
+		8BC4F27D28684AA6002B3236 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 		D31FAE06FCB91372934F321C /* Pods-volvo-test-task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-volvo-test-task.release.xcconfig"; path = "Target Support Files/Pods-volvo-test-task/Pods-volvo-test-task.release.xcconfig"; sourceTree = "<group>"; };
 		F2EE5DF8BA92330F700BA7AE /* Pods-volvo-test-task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-volvo-test-task.debug.xcconfig"; path = "Target Support Files/Pods-volvo-test-task/Pods-volvo-test-task.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,6 +100,7 @@
 		8B75ED03286828F700167603 /* volvo-test-task */ = {
 			isa = PBXGroup;
 			children = (
+				8BA66479286862830024555A /* Resources */,
 				8B75ED1B2868297A00167603 /* Configuration */,
 				8B75ED192868294D00167603 /* User Interface */,
 				8B75ED182868294600167603 /* Networking */,
@@ -123,8 +130,6 @@
 			children = (
 				8B75ED04286828F700167603 /* AppDelegate.swift */,
 				8B75ED06286828F700167603 /* SceneDelegate.swift */,
-				8B75ED0D286828F800167603 /* Assets.xcassets */,
-				8B75ED0F286828F800167603 /* LaunchScreen.storyboard */,
 				8B75ED12286828F800167603 /* Info.plist */,
 			);
 			path = Configuration;
@@ -143,6 +148,8 @@
 		8B75ED1D286829A800167603 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8BC4F27928684A97002B3236 /* WeatherViewController.swift */,
+				8BC4F27A28684A97002B3236 /* WeatherViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -150,6 +157,7 @@
 		8B75ED1E286829B100167603 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				8BC4F27D28684AA6002B3236 /* WeatherViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -164,7 +172,7 @@
 		8BA3B468286835AB00CB5DFA /* Weather */ = {
 			isa = PBXGroup;
 			children = (
-				8BA3B469286835DD00CB5DFA /* WeatherAPIClient.swift */,
+				8BA3B469286835DD00CB5DFA /* WeatherService.swift */,
 				8BA3B46B2868381600CB5DFA /* Model */,
 			);
 			path = Weather;
@@ -182,6 +190,15 @@
 				8BA3B47428683A0100CB5DFA /* Wind.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		8BA66479286862830024555A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8B75ED0D286828F800167603 /* Assets.xcassets */,
+				8B75ED0F286828F800167603 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B75ED11286828F800167603 /* LaunchScreen.storyboard in Resources */,
+				8BC4F27C28684A97002B3236 /* WeatherViewController.xib in Resources */,
 				8B75ED0E286828F800167603 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,8 +317,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BA3B47828683A0100CB5DFA /* Main.swift in Sources */,
+				8BC4F27E28684AA6002B3236 /* WeatherViewModel.swift in Sources */,
+				8BC4F27B28684A97002B3236 /* WeatherViewController.swift in Sources */,
 				8BA3B4672868358500CB5DFA /* NetworkingManager.swift in Sources */,
-				8BA3B46A286835DD00CB5DFA /* WeatherAPIClient.swift in Sources */,
+				8BA3B46A286835DD00CB5DFA /* WeatherService.swift in Sources */,
 				8BA3B47928683A0100CB5DFA /* Weather.swift in Sources */,
 				8BA3B47728683A0100CB5DFA /* Sys.swift in Sources */,
 				8BA3B47A28683A0100CB5DFA /* Coord.swift in Sources */,
@@ -457,7 +477,6 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "Volvo Test Task";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -490,7 +509,6 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "Volvo Test Task";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
