@@ -22,6 +22,7 @@ class WeatherViewModel: NSObject {
     private var changeHandler: ChangeHandler?
     
     let REUSABLE_CELL_IDENTIFIER = String(describing: WeatherCollectionViewCell.self)
+     
     
     var dataCount = 0 {
         didSet {
@@ -34,18 +35,6 @@ class WeatherViewModel: NSObject {
     func bind(changeHandler: ChangeHandler?) {
         self.changeHandler = changeHandler
     }
-    
-    func getWeatherInfo(){
-        self.changeHandler?(.loading(true))
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-            NetworkingManager.shared.getWeatherInfo { response in
-                print(JSON(response?.toJSON()))
-                self.weatherResponse = response
-                self.dataCount = 6
-                self.changeHandler?(.loading(false))
-            }
-        }
-    }
 }
 
 extension WeatherViewModel: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -57,12 +46,12 @@ extension WeatherViewModel: UICollectionViewDelegate, UICollectionViewDataSource
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return dataCount
+        return City.allCases.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: REUSABLE_CELL_IDENTIFIER, for: indexPath) as! WeatherCollectionViewCell
-        cell.update(with: "Cell Number #\(indexPath.row)")
+        cell.update(with: City.allCases[indexPath.row], delegate: self)
         return cell
     }
     
@@ -70,4 +59,14 @@ extension WeatherViewModel: UICollectionViewDelegate, UICollectionViewDataSource
         //TODO: will be implemented
     }
      
+}
+
+extension WeatherViewModel: WeatherCollectionViewCellDelegate {
+    
+    func getWeatherInfo(city: City, callback: @escaping WeatherResponseHandler) {
+        NetworkingManager.shared.getWeatherInfo(city: city) { response in
+            callback(response)
+        }
+    }
+    
 }

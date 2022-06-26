@@ -16,8 +16,8 @@ class NetworkingManager: NSObject {
 
 extension NetworkingManager {
     
-    func getWeatherInfo(city: String = "London", callback: @escaping WeatherResponseHandler){
-        self.weatherService.getWeatherInfo(city: city) { response in
+    func getWeatherInfo(city: City, callback: @escaping WeatherResponseHandler){
+        self.weatherService.getWeatherInfo(city: city.asciiEncoded) { response in
             callback(response)
         }
     }

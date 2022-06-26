@@ -41,7 +41,6 @@ class WeatherViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.bindViewModel()
-        self.viewModel?.getWeatherInfo()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
