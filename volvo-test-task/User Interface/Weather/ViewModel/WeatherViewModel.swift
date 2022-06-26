@@ -39,6 +39,7 @@ class WeatherViewModel: NSObject {
         self.changeHandler?(.loading(true))
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
             NetworkingManager.shared.getWeatherInfo { response in
+                print(JSON(response?.toJSON()))
                 self.weatherResponse = response
                 self.dataCount = 6
                 self.changeHandler?(.loading(false))

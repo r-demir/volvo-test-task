@@ -16,8 +16,8 @@ class NetworkingManager: NSObject {
 
 extension NetworkingManager {
     
-    func getWeatherInfo(latitude: Double = 35, longitude: Double = 139, callback: @escaping WeatherResponseHandler){
-        self.weatherService.getWeatherInfo(latitude: latitude, longitude: longitude) { response in
+    func getWeatherInfo(city: String = "London", callback: @escaping WeatherResponseHandler){
+        self.weatherService.getWeatherInfo(city: city) { response in
             callback(response)
         }
     }
