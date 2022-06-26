@@ -147,7 +147,6 @@
 		8B75ED1C2868299F00167603 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
-				8B75ED1F286829B800167603 /* Model */,
 				8B75ED1E286829B100167603 /* ViewModel */,
 				8B75ED1D286829A800167603 /* View */,
 			);
@@ -170,13 +169,6 @@
 				8BC4F27D28684AA6002B3236 /* WeatherViewModel.swift */,
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		8B75ED1F286829B800167603 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		8BA3B468286835AB00CB5DFA /* Weather */ = {

@@ -14,7 +14,6 @@ For support, please feel free to contact me at https://www.linkedin.com/in/syeda
 import Foundation
 import ObjectMapper
 
-
 struct WeatherResponse : Mappable {
 	var coord : Coord?
 	var weather : [Weather]?
