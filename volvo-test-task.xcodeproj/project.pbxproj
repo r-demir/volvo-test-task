@@ -104,8 +104,8 @@
 		8B75ED182868294600167603 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				8BA3B468286835AB00CB5DFA /* Weather */,
 				8BA3B4662868358500CB5DFA /* NetworkingManager.swift */,
+				8BA3B468286835AB00CB5DFA /* Weather */,
 			);
 			path = Networking;
 			sourceTree = "<group>";

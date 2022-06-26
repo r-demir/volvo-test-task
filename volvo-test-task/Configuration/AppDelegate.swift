@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftyJSON
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        NetworkingManager.shared.weatherClient.getWeatherInfo()
+        NetworkingManager.shared.getWeatherInfo { response in
+            guard let response = response else { return }
+            print(JSON(response.toJSON()))
+        }
+        
         return true
     }
 

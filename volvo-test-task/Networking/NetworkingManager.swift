@@ -6,9 +6,21 @@
 //
 
 import UIKit
+import SwiftyJSON
+
 
 class NetworkingManager: NSObject {
     static var shared = NetworkingManager()
-    var weatherClient = WeatherAPIClient()
+    private var weatherClient = WeatherAPIClient()
+}
+
+extension NetworkingManager {
+    
+    func getWeatherInfo(latitude: Double = 35, longitude: Double = 139, callback: @escaping WeatherResponseHandler){
+        self.weatherClient.getWeatherInfo(latitude: latitude, longitude: longitude) { response in
+            callback(response)
+        }
+    }
+    
 }
 

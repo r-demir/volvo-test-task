@@ -8,6 +8,7 @@ target 'volvo-test-task' do
   # Pods for volvo-test-task
   pod 'SVProgressHUD'
   pod 'AlamofireObjectMapper', '~> 5.2'
+  pod 'SwiftyJSON', '~> 4.2.0'
 
 end
 
