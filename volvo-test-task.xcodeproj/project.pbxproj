@@ -14,7 +14,6 @@
 		8BA3B4672868358500CB5DFA /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA3B4662868358500CB5DFA /* NetworkingManager.swift */; };
 		8BA3B46A286835DD00CB5DFA /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA3B469286835DD00CB5DFA /* WeatherService.swift */; };
 		8BA3B47528683A0100CB5DFA /* Clouds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA3B46E28683A0100CB5DFA /* Clouds.swift */; };
-		8BA3B47628683A0100CB5DFA /* WeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA3B46F28683A0100CB5DFA /* WeatherResponse.swift */; };
 		8BA3B47728683A0100CB5DFA /* Sys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA3B47028683A0100CB5DFA /* Sys.swift */; };
 		8BA3B47828683A0100CB5DFA /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA3B47128683A0100CB5DFA /* Main.swift */; };
 		8BA3B47928683A0100CB5DFA /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA3B47228683A0100CB5DFA /* Weather.swift */; };
@@ -27,6 +26,7 @@
 		8BC4F27B28684A97002B3236 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC4F27928684A97002B3236 /* WeatherViewController.swift */; };
 		8BC4F27C28684A97002B3236 /* WeatherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BC4F27A28684A97002B3236 /* WeatherViewController.xib */; };
 		8BC4F27E28684AA6002B3236 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC4F27D28684AA6002B3236 /* WeatherViewModel.swift */; };
+		8BDD94952868B89000105707 /* WeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDD94942868B89000105707 /* WeatherResponse.swift */; };
 		BEEB5FD54E2009A74415638A /* Pods_volvo_test_task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 022907428F90131B450CAC73 /* Pods_volvo_test_task.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +41,6 @@
 		8BA3B4662868358500CB5DFA /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 		8BA3B469286835DD00CB5DFA /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		8BA3B46E28683A0100CB5DFA /* Clouds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clouds.swift; sourceTree = "<group>"; };
-		8BA3B46F28683A0100CB5DFA /* WeatherResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WeatherResponse.swift; path = ../../../../../../../Downloads/codegen_62b802227cecf/WeatherResponse.swift; sourceTree = "<group>"; };
 		8BA3B47028683A0100CB5DFA /* Sys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sys.swift; sourceTree = "<group>"; };
 		8BA3B47128683A0100CB5DFA /* Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		8BA3B47228683A0100CB5DFA /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
@@ -54,6 +53,7 @@
 		8BC4F27928684A97002B3236 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		8BC4F27A28684A97002B3236 /* WeatherViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherViewController.xib; sourceTree = "<group>"; };
 		8BC4F27D28684AA6002B3236 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		8BDD94942868B89000105707 /* WeatherResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherResponse.swift; sourceTree = "<group>"; };
 		D31FAE06FCB91372934F321C /* Pods-volvo-test-task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-volvo-test-task.release.xcconfig"; path = "Target Support Files/Pods-volvo-test-task/Pods-volvo-test-task.release.xcconfig"; sourceTree = "<group>"; };
 		F2EE5DF8BA92330F700BA7AE /* Pods-volvo-test-task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-volvo-test-task.debug.xcconfig"; path = "Target Support Files/Pods-volvo-test-task/Pods-volvo-test-task.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -197,7 +197,7 @@
 				8BA3B47128683A0100CB5DFA /* Main.swift */,
 				8BA3B47028683A0100CB5DFA /* Sys.swift */,
 				8BA3B47228683A0100CB5DFA /* Weather.swift */,
-				8BA3B46F28683A0100CB5DFA /* WeatherResponse.swift */,
+				8BDD94942868B89000105707 /* WeatherResponse.swift */,
 				8BA3B47428683A0100CB5DFA /* Wind.swift */,
 			);
 			path = Model;
@@ -361,7 +361,6 @@
 				8BA3B47928683A0100CB5DFA /* Weather.swift in Sources */,
 				8BA3B47728683A0100CB5DFA /* Sys.swift in Sources */,
 				8BA3B47A28683A0100CB5DFA /* Coord.swift in Sources */,
-				8BA3B47628683A0100CB5DFA /* WeatherResponse.swift in Sources */,
 				8BA3B47528683A0100CB5DFA /* Clouds.swift in Sources */,
 				8B75ED05286828F700167603 /* AppDelegate.swift in Sources */,
 				8BA6648928687F430024555A /* City.swift in Sources */,
@@ -369,6 +368,7 @@
 				8BA3B47B28683A0100CB5DFA /* Wind.swift in Sources */,
 				8BA6648D2868A5E50024555A /* Alert.swift in Sources */,
 				8BA6647D28686B1F0024555A /* WeatherCollectionViewCell.swift in Sources */,
+				8BDD94952868B89000105707 /* WeatherResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
