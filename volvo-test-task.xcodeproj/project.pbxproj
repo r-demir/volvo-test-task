@@ -20,6 +20,8 @@
 		8BA3B47928683A0100CB5DFA /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA3B47228683A0100CB5DFA /* Weather.swift */; };
 		8BA3B47A28683A0100CB5DFA /* Coord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA3B47328683A0100CB5DFA /* Coord.swift */; };
 		8BA3B47B28683A0100CB5DFA /* Wind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA3B47428683A0100CB5DFA /* Wind.swift */; };
+		8BA6647D28686B1F0024555A /* WeatherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA6647B28686B1F0024555A /* WeatherCollectionViewCell.swift */; };
+		8BA6647E28686B1F0024555A /* WeatherCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BA6647C28686B1F0024555A /* WeatherCollectionViewCell.xib */; };
 		8BC4F27B28684A97002B3236 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC4F27928684A97002B3236 /* WeatherViewController.swift */; };
 		8BC4F27C28684A97002B3236 /* WeatherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BC4F27A28684A97002B3236 /* WeatherViewController.xib */; };
 		8BC4F27E28684AA6002B3236 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC4F27D28684AA6002B3236 /* WeatherViewModel.swift */; };
@@ -43,6 +45,8 @@
 		8BA3B47228683A0100CB5DFA /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		8BA3B47328683A0100CB5DFA /* Coord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coord.swift; sourceTree = "<group>"; };
 		8BA3B47428683A0100CB5DFA /* Wind.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wind.swift; sourceTree = "<group>"; };
+		8BA6647B28686B1F0024555A /* WeatherCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCollectionViewCell.swift; sourceTree = "<group>"; };
+		8BA6647C28686B1F0024555A /* WeatherCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherCollectionViewCell.xib; sourceTree = "<group>"; };
 		8BC4F27928684A97002B3236 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		8BC4F27A28684A97002B3236 /* WeatherViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherViewController.xib; sourceTree = "<group>"; };
 		8BC4F27D28684AA6002B3236 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
@@ -104,6 +108,7 @@
 				8B75ED1B2868297A00167603 /* Configuration */,
 				8B75ED192868294D00167603 /* User Interface */,
 				8B75ED182868294600167603 /* Networking */,
+				8BA6647F28686E010024555A /* Extensions */,
 			);
 			path = "volvo-test-task";
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 			children = (
 				8BC4F27928684A97002B3236 /* WeatherViewController.swift */,
 				8BC4F27A28684A97002B3236 /* WeatherViewController.xib */,
+				8BA6647A28686AF70024555A /* Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -199,6 +205,22 @@
 				8B75ED0F286828F800167603 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		8BA6647A28686AF70024555A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8BA6647B28686B1F0024555A /* WeatherCollectionViewCell.swift */,
+				8BA6647C28686B1F0024555A /* WeatherCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		8BA6647F28686E010024555A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B75ED11286828F800167603 /* LaunchScreen.storyboard in Resources */,
+				8BA6647E28686B1F0024555A /* WeatherCollectionViewCell.xib in Resources */,
 				8BC4F27C28684A97002B3236 /* WeatherViewController.xib in Resources */,
 				8B75ED0E286828F800167603 /* Assets.xcassets in Resources */,
 			);
@@ -329,6 +352,7 @@
 				8B75ED05286828F700167603 /* AppDelegate.swift in Sources */,
 				8B75ED07286828F700167603 /* SceneDelegate.swift in Sources */,
 				8BA3B47B28683A0100CB5DFA /* Wind.swift in Sources */,
+				8BA6647D28686B1F0024555A /* WeatherCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

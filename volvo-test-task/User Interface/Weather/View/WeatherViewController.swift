@@ -7,9 +7,12 @@
 
 import UIKit
 import SwiftyJSON
+import SVProgressHUD
 
 class WeatherViewController: UIViewController {
 
+    @IBOutlet weak var collectionView: UICollectionView!
+    
     private var viewModel: WeatherViewModel?
     
     init(viewModel: WeatherViewModel) {
@@ -24,23 +27,26 @@ class WeatherViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "Weathers"
-        
-        NetworkingManager.shared.getWeatherInfo { response in
-            guard let response = response else { return }
-            print(JSON(response.toJSON()))
-        }
-        
+        setup()
+    }
+    
+    func setup() {
+        self.navigationItem.title = "Weather"
+        let nib = UINib(nibName: String(describing: WeatherCollectionViewCell.self), bundle: nil)
+        self.collectionView.register(nib, forCellWithReuseIdentifier: String(describing: WeatherCollectionViewCell.self))
+        self.collectionView.delegate = viewModel
+        self.collectionView.dataSource = viewModel
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        bindViewModel()
+        self.bindViewModel()
+        self.viewModel?.getWeatherInfo()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        unbindViewModel()
+        self.unbindViewModel()
     }
     
     @IBAction func clicked(_ sender: Any) {
@@ -58,7 +64,9 @@ private extension WeatherViewController {
                 case .alert(title: let title, message: let message):
                     break
                 case .loading(let isLoading):
-                    break
+                    isLoading ? SVProgressHUD.show() : SVProgressHUD.dismiss()
+                case .reload:
+                    self?.collectionView.reloadData()
             }
         }
     }
@@ -66,6 +74,7 @@ private extension WeatherViewController {
     func unbindViewModel() {
         viewModel?.bind(changeHandler: nil)
     }
-
     
 }
+
+

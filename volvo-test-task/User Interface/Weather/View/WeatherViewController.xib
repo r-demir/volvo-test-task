@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WeatherViewController" customModule="volvo_test_task" customModuleProvider="target">
             <connections>
+                <outlet property="collectionView" destination="8tJ-5K-UQg" id="NPk-sH-Ci4"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,27 +20,35 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6a-rz-Hxy">
-                    <rect key="frame" x="179" y="437.5" width="56" height="31"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="filled" title="Click"/>
-                    <connections>
-                        <action selector="clicked:" destination="-1" eventType="touchUpInside" id="Ync-KR-wSM"/>
-                    </connections>
-                </button>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="8tJ-5K-UQg">
+                    <rect key="frame" x="15" y="59" width="384" height="788"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="exg-eu-SZH">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemGreenColor"/>
+            <color key="backgroundColor" systemColor="systemGrayColor"/>
+            <color key="tintColor" systemColor="labelColor"/>
             <constraints>
-                <constraint firstItem="R6a-rz-Hxy" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="FCA-Y4-ctF"/>
-                <constraint firstItem="R6a-rz-Hxy" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="iqb-k2-jTI"/>
+                <constraint firstItem="8tJ-5K-UQg" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="fLS-ux-ll0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8tJ-5K-UQg" secondAttribute="trailing" constant="15" id="g46-E0-jkT"/>
+                <constraint firstItem="8tJ-5K-UQg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="v3k-dA-ez5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="8tJ-5K-UQg" secondAttribute="bottom" constant="15" id="wUb-Wo-7kq"/>
             </constraints>
             <point key="canvasLocation" x="132" y="79"/>
         </view>
     </objects>
     <resources>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
