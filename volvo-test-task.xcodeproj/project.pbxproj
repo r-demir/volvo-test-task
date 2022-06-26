@@ -11,15 +11,19 @@
 		8B75ED07286828F700167603 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B75ED06286828F700167603 /* SceneDelegate.swift */; };
 		8B75ED0E286828F800167603 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B75ED0D286828F800167603 /* Assets.xcassets */; };
 		8B75ED11286828F800167603 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B75ED0F286828F800167603 /* LaunchScreen.storyboard */; };
+		BEEB5FD54E2009A74415638A /* Pods_volvo_test_task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 022907428F90131B450CAC73 /* Pods_volvo_test_task.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		022907428F90131B450CAC73 /* Pods_volvo_test_task.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_volvo_test_task.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B75ED01286828F700167603 /* volvo-test-task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "volvo-test-task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B75ED04286828F700167603 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B75ED06286828F700167603 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8B75ED0D286828F800167603 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B75ED10286828F800167603 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8B75ED12286828F800167603 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D31FAE06FCB91372934F321C /* Pods-volvo-test-task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-volvo-test-task.release.xcconfig"; path = "Target Support Files/Pods-volvo-test-task/Pods-volvo-test-task.release.xcconfig"; sourceTree = "<group>"; };
+		F2EE5DF8BA92330F700BA7AE /* Pods-volvo-test-task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-volvo-test-task.debug.xcconfig"; path = "Target Support Files/Pods-volvo-test-task/Pods-volvo-test-task.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +31,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEEB5FD54E2009A74415638A /* Pods_volvo_test_task.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04EBC5FAB2B3C49135B272A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				022907428F90131B450CAC73 /* Pods_volvo_test_task.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6D71942B0994FBD04EAAC9A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F2EE5DF8BA92330F700BA7AE /* Pods-volvo-test-task.debug.xcconfig */,
+				D31FAE06FCB91372934F321C /* Pods-volvo-test-task.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8B75ECF8286828F700167603 = {
 			isa = PBXGroup;
 			children = (
 				8B75ED03286828F700167603 /* volvo-test-task */,
 				8B75ED02286828F700167603 /* Products */,
+				6D71942B0994FBD04EAAC9A9 /* Pods */,
+				04EBC5FAB2B3C49135B272A4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,9 +149,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8B75ED15286828F800167603 /* Build configuration list for PBXNativeTarget "volvo-test-task" */;
 			buildPhases = (
+				59C63E8B0B8BB598ABF359D2 /* [CP] Check Pods Manifest.lock */,
 				8B75ECFD286828F700167603 /* Sources */,
 				8B75ECFE286828F700167603 /* Frameworks */,
 				8B75ECFF286828F700167603 /* Resources */,
+				7F12A53617B5C3769F57EFFC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -181,6 +208,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		59C63E8B0B8BB598ABF359D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-volvo-test-task-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F12A53617B5C3769F57EFFC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-volvo-test-task/Pods-volvo-test-task-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-volvo-test-task/Pods-volvo-test-task-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-volvo-test-task/Pods-volvo-test-task-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8B75ECFD286828F700167603 /* Sources */ = {
@@ -324,6 +393,7 @@
 		};
 		8B75ED16286828F800167603 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2EE5DF8BA92330F700BA7AE /* Pods-volvo-test-task.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -353,6 +423,7 @@
 		};
 		8B75ED17286828F800167603 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D31FAE06FCB91372934F321C /* Pods-volvo-test-task.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
